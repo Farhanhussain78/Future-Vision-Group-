@@ -828,6 +828,118 @@
     font-size: 1rem;
   }
 }
+/* ===== CONTACT SECTION ===== */
+.contact-section {
+  position: relative;
+  background: url('images/contact-bg.png') no-repeat center/cover;
+  padding: 5rem 2rem;
+  color: #fff;
+  overflow: hidden;
+}
+
+.contact-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.contact-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contact-heading {
+  display: inline-block;
+  background: #ffff57;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding: 0.4rem 1.2rem;
+  transform: skew(-6deg);
+  letter-spacing: 1px;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.4);
+}
+
+.contact-info {
+  margin-left: 2rem;
+}
+
+.contact-item {
+  margin-bottom: 2rem;
+}
+
+.contact-item h3 {
+  color: #ffff57;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.contact-item p {
+  font-size: 1.05rem;
+  color: #fff;
+  margin: 0;
+}
+
+.contact-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+/* ===== SOCIAL ICON CONTAINER BELOW EMAIL ===== */
+.contact-social {
+  margin-top: 0.8rem;              /* small gap under email */
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;                     /* spacing between icons */
+}
+
+/* ===== SHARED SOCIAL ICON STYLE ===== */
+.social-logo {
+  width: 40px;                     /* smaller size */
+  height: 40px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ===== INSTAGRAM LOGO ===== */
+.instagram-logo {
+  box-shadow: 0 0 10px rgba(255, 100, 180, 0.25);
+}
+.instagram-logo:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 100, 180, 0.5);
+}
+
+/* ===== YOUTUBE LOGO ===== */
+.youtube-logo {
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.25);
+}
+.youtube-logo:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .social-logo {
+    width: 34px;
+    height: 34px;
+  }
+  .contact-social {
+    justify-content: flex-start;  /* align left under email */
+  }
+}
+
 
   </style>
 </head>
@@ -874,7 +986,7 @@
       </div>
       <div class="promo-text">
         <p>
-          In this program, those who save a monthly of <strong>₹1,000</strong> will receive gifts valued at over <strong>₹1 lakh</strong> each month, and coupons which can be used in FGrab for more discounts.
+          In this program, those who save a monthly of <strong>₹1,000</strong> will receive gifts valued at over <strong>₹1 lakh</strong> each month, and coupons which can be used in Fgrab for more discounts.
           The draw will feature one grand prize, along with <strong>20 silver coins</strong> and <strong>20 surprise gifts</strong>.
         </p>
       </div>
@@ -955,10 +1067,10 @@
 
     <!-- right: text -->
     <div class="fgrab-right">
-      <h3 id="fgrab-title">FGrab: Your Upcoming E-commerce Destination</h3>
+      <h3 id="fgrab-title">Fgrab: Your Upcoming E-commerce Destination</h3>
       <p>
-        FGrab is an Indian e-commerce website where you'll discover a myriad of offers and deals across various product categories at unbeatable prices.
-        Customers who join our company scheme will enjoy exclusive discounts and offers. Stay tuned — FGrab will be launching soon!
+        Fgrab is an Indian e-commerce website where you'll discover a myriad of offers and deals across various product categories at unbeatable prices.
+        Customers who join our company scheme will enjoy exclusive discounts and offers. Stay tuned — Fgrab will be launching soon!
       </p>
     </div>
   </div>
@@ -1231,11 +1343,21 @@
       </div>
 
       <div class="contact-item">
-        <h3>Email</h3>
-        <p><a href="mailto:futurevisiongroup@gmail.com">futurevisiongroup@gmail.com</a></p>
-      </div>
-    </div>
+  <h3>Email</h3>
+  <p><a href="mailto:futurevisiongroup@gmail.com">futurevisiongroup@gmail.com</a></p>
+
+  <!-- ✅ Social Icons under Email -->
+  <div class="contact-social">
+    <a href="https://www.instagram.com/future_vision_group_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" aria-label="Instagram">
+      <img src="fv insta logo.png" alt="Instagram" class="social-logo instagram-logo" />
+    </a>
+
+    <a href="https://youtube.com/@futurevisiongroupp?si=ZGUo9KQ_dmNi82Ky" target="_blank" aria-label="YouTube">
+      <img src="fv yt logo.png" alt="YouTube" class="social-logo youtube-logo" />
+    </a>
   </div>
+</div>
+
 </section>
 
 </section>
@@ -1246,4 +1368,3 @@
 
 </body>
 </html>
-
